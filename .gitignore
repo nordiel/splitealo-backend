@@ -181,3 +181,6 @@ junit.xml
 package.copy.json
 
 *.tgz
+
+#enviornment
+.env

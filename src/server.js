@@ -2,7 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
-const PORT = 3000;
+
+require('dotenv').config();
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`Server running on http://localhost${port}`);
+})
 
 app.use(bodyParser.json());
 
